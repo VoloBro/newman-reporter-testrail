@@ -36,6 +36,8 @@ Title of test run to create.
 Type of test cases to add to the test run.
 * TESTRAIL_CLOSE_RUN (optional)
 Close run if all tests are passed
+* TESTRAIL_RUNID (optional)
+Update specific run with automated test results. Can be used in case test run contains manual and automated tests.
 
 You can use [direnv](https://github.com/direnv/direnv) to easily maintain directory-specific options.
 
@@ -56,5 +58,6 @@ TESTRAIL_PROJECTID="1"
 TESTRAIL_TITLE="Dev-API Regression"
 TESTRAIL_TYPE="Automated"
 TESTRAIL_CLOSE_RUN="true"
+TESTRAIL_RUNID="123"
 newman run my-collection.postman_collection.json -r testrail,cli --bail
 ```
