@@ -10,8 +10,16 @@ npm install git+https://github.com/nagornyi/newman-reporter-testrail.git -g
 
 ## Usage
 
-### Prefix all test assertions you wish to map with the test number.
-Include the letter C. You may map more than one test case to an assertion.
+### Prefix request name or all test assertions you wish to map with the test number.
+
+Option A: include test case in Postman request name:
+```
+"C226750 C226746 Reqest to test user authentication"
+```
+
+Option B: 
+Map one to an assertion.
+
 ```
 pm.test("C226750 C226746 Status code is 200", function () {
     pm.response.to.have.status(200);
