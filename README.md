@@ -45,7 +45,7 @@ Type of test cases to add to the test run.
 * TESTRAIL_CUSTOM (optional)
 Filter test cases to add to the test run by custom attribute.
 * TESTRAIL_CLOSE_RUN (optional)
-Close run if all tests are passed. Case sensitive, supported values are 'true' or 'false'.
+Close run after importing test results to TestRail . Case sensitive, supported values are 'true' or 'false'.
 * TESTRAIL_RUNID (optional)
 Update specific run with automated test results. Can be used in case test run contains manual and automated tests.
 
